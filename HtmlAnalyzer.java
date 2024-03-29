@@ -25,7 +25,7 @@ public class HtmlAnalyzer {
             if (!deepestText.isEmpty()) {
                 System.out.println(deepestText);
             } else {
-                System.err.println("Malformed HTML or no text content available.");
+                System.err.println("Malformed HTML.");
             }
         } catch (IOException e) {
             System.err.println("Failed to connect to URL: " + e.getMessage());
@@ -75,7 +75,7 @@ public class HtmlAnalyzer {
                 if (trimmedLine.startsWith("<")) {
                     if (trimmedLine.startsWith("</")) {
                         currentLevel--;
-                    } else if (!trimmedLine.endsWith("/>")) { // Ignore self-closing tags
+                    } else if (!trimmedLine.endsWith("/>")) {
                         currentLevel++;
                     }
                 } else if (currentLevel > deepestLevel) {
