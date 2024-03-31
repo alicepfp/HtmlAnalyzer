@@ -63,7 +63,7 @@ public class HtmlAnalyzer {
      * @return The deepest text found, or an empty string if none is found.
      * @throws IOException If an input or output exception occurs.
      */
-    private static String extractDeepestText(BufferedReader reader) throws IOException {
+    private static String extractDeepestText(BufferedReader reader) throws IOException { 
         String inputLine;
         int currentLevel = 0, deepestLevel = 0;
         String deepestText = "";
