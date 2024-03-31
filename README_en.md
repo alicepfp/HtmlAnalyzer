@@ -12,16 +12,16 @@ This java program is capable of retrieving the text snippet contained at the dee
 
 To compile the program, simply run the command inside the folder containing the files:
 
-```
-javac HTMLAnalyzer.java
+``` shell
+javac HtmlAnalyzer.java
 ```
 
 ### Usage
 
 After compiling the program, to use it just run the command:
 
-```
-java HTMLAnalyzer <url>
+``` shell
+java HtmlAnalyzer <url>
 ```
 
 ### Easter Egg

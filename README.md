@@ -12,16 +12,16 @@ Este programa em java é capaz de a partir de uma URL, obter o trecho de texto c
 
 Para compilar o programa basta dentro da pasta contendo os arquivos executar o comando:
 
-```
-javac HTMLAnalyzer.java
+``` shell
+javac HtmlAnalyzer.java
 ```
 
 ### Utilização
 
 Após compilar o programa, para utilizar basta executar o comando:
 
-```
-java HTMLAnalyzer <url>
+``` shell
+java HtmlAnalyzer <url>
 ```
 
 ### Easter Egg
