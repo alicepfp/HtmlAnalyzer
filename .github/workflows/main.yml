@@ -17,7 +17,5 @@ jobs:
           ls ${{ github.workspace }}
       - name: Teste da aplicação
         run: |
-          cd ${{ github.workspace }}
-          javac HtmlAnalyzer.java
-          java HtmlAnalyer https://paperswithcode.com/paper/yolo-pose-enhancing-yolo-for-multi-person
+          touch teste.txt
       - run: echo "🍏 This job's status is ${{ job.status }}."
