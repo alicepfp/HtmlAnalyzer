@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Install JDK 17
         run: |
-          wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.deb && apt install jdk-17_linux-x64_bin.deb
+          wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.deb && sudo apt install jdk-17_linux-x64_bin.deb
       - name: Teste da aplicação
         run: |
           ls {{ github.workspace }}
