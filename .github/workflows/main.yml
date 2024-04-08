@@ -15,4 +15,9 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: Teste da aplicação
+        run: |
+          cd ${{ github.workspace }}
+          javac HtmlAnalyzer.java
+          java HtmlAnalyer https://paperswithcode.com/paper/yolo-pose-enhancing-yolo-for-multi-person
       - run: echo "🍏 This job's status is ${{ job.status }}."
