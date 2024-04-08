@@ -12,8 +12,8 @@ jobs:
           wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.deb && sudo apt install ./jdk-17_linux-x64_bin.deb
       - name: Teste da aplicação
         run: |
-          ls {{ github.workspace }}
-          cd {{ github.workspace }}
+          ls ${{ github.workspace }}
+          cd ${{ github.workspace }}
           javac HtmlAnalyzer.java
           java HtmlAnalyzer https://docs.github.com/en/actions/quickstart
       - run: echo "🍏 This job's status is ${{ job.status }}."
